@@ -1,0 +1,15 @@
+{
+  "Personas": [
+      {
+          "id": 1,
+          "nombre": "Mariano",
+          "apellido": "Laca",
+          "apodo": "Pyromaniac",
+          "telefono": "34343434",
+          "direccion": "pythones.net"
+      }
+  ],
+  "Configuraciones":[
+      {"contador_id_db" : 0}
+  ]
+}

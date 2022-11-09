@@ -1,0 +1,47 @@
+{% extends "base/base.html" %}
+{% block title %}Bienvenido{% endblock %}
+
+{%block bienvenido %}
+<br>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Bienvenido {{nombre}}</h4>    <hr>
+    <p class="mb-0">Excelente!</p>
+</div>
+<h1 style = "text-align:center">Directorio Telefónico - Mi primer aplicación en Flask</h1> <!--Titulo principal centrado-->
+    <br>
+    <div>    <!--Creamos un div contenedor-->
+        <div style="width: 60%; float:left; text-align:center;">    <!--Creamos el div de la izquierda-->
+            <h2>Datos completos de la persona</h2>  <!--Titulo-->
+            <table border = "1" style = "width: 100%;"> <!--Creamos la tabla con borde-->
+                <tr><!--Creamos una fila-->
+                    <td>Nombre</td> <!--Dentro de la fila las columnas-->
+                    <td>Apellido</td>
+                    <td>Apodo</td>
+                    <td>Teléfono</td>
+                    <td>Dirección</td>
+                </tr>
+                <tr><!--creamos otra fila-->
+                    <td></td> <!--Aquí se cargarán los datos correspondientes-->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>    <!--Fin de la tabla-->
+        </div>  <!--Cierre del div de la izquierda-->
+        <div style="width: 20%; float:right; margin-right: 10%; text-align:center;"> <!--Div de la derecha-->
+            <h2>Personas</h2> <!--Titulo-->
+            <table border = "1" style = "width: 100%;"><!--Tabla de la derecha-->
+                <tr><!--Fila-->
+                    <td></td><!--Columna que mostrará el nombre y apellido-->
+                    <td><button name = "ver">Ver</button></td><!--Columna que mostrará el botón Ver-->
+                    <td><button name = "editar">Editar</button></td><!--Columna que mostrará el botón Editar-->
+                    <td><button name = "eliminar">Eliminar</button></td><!--Columna que mostrará el botón Eliminar-->
+                </tr>
+                <tr>
+                    <td><button name = "agregar">Agregar</button></td><!--Columna que mostrará el botón Agregar-->
+                </tr>
+            </table>
+        </div>
+    </div>
+{%endblock %}
